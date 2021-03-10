@@ -1,38 +1,256 @@
-.App {
+.navbar{
+  height: 7vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  
+  
+}
+
+.navbar img{
+  height: 1.2rem;
+  top: 0;
+  margin-left: 0.5rem;
+
+  
+}
+
+.nav-links{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 1rem;
+  
+  
+}
+
+.nav-links a{
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255);
+}
+.launch-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  background: rgba(255, 255, 255, 0.2);
+backdrop-filter: blur(4px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 36px;
+padding: 0.2rem 0.7rem;
+}
+
+.header{
+  position: relative;
+  padding-top: 1rem;
+  height: 120vh;
+  width: 100vw;
+  color: rgba(255, 255, 255);
+ 
+}
+
+.header-bg{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: -9;
+  background-image: linear-gradient(71.85deg, #14213D -2.27%, #20195E 32.46%, #3C06A9 73.55%, #36E1E1 114.25%);  
+  clip-path: polygon(0 0, 100% 0, 100% 65%, -10% 95%);
+  border-bottom-left-radius: 150px 150px;
+}
+.header-text{
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.header-text p{
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+}
+.header-text h2{
+  font-weight: lighter;
+  font-weight: 400;
+}
+.header-text h2 span{
+  color: #FA982F;
+}
+
+.header-btns{
+  display: flex;
+  justify-content: space-between;
+  width: 270px;
+
+}
+
+header button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color: inherit;
+  color: rgba(255, 255, 255);
+  border: none;
+  border: thin solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  padding: 0.15rem 0.7rem;
+  cursor: pointer;
+  font-size: 0.7rem;
+}
+
+header button:hover{
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px)
+}
+
+header button img{
+  height: 30px;
+  width: 30px;
+}
+
+.access-storage-btn{
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+}
+
+.header-px{
+  height: 17rem;
+  width: 20rem;
+}
+
+.header-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85vw;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* SYLINGS FOR HEADER CARDS */
+
+
+
+.header-card{
+  height: 160px;
+  width: 130px;
+  background-color: rgba(255, 255, 255);
+  color: rgba(0,0,0);
+  font-size: 0.7rem;
+  text-align: center;
+  padding: 0 0.7rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.1rem 0.1rem 0.7rem rgba(0,0,0, 0.1);
+}
+
+.header-card img{
+  height: 30px;
+  width: 30px;
+  margin-top: -0.7rem;
+
+}
+.header-card p{
+  line-height: 1rem;
+  font-size: 0.65rem;
+  font-weight: lighter;
+}
+
+.header-card h3{
+  font-weight: lighter;
+  font-weight: 450;
+}
+
+.header-cards{
+  position: absolute;
+  bottom: -5%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 85vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9;
+}
+
+
+/*ABOUT SECTION STYLING */
+
+.about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.about-item-img{
+  height: 18rem;
+  width: 15rem;
+}
+
+.about-item p{
+  line-height: 1rem;
+  font-size: 0.65rem;
+  font-weight: lighter;
+
+}
+.about-item-text{
+  width: 35vw;
+}
+.about-item-text h3{
+  font-weight: lighter;
+  font-weight: 400;
+}
+.about-item{
+  width: 85vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-big-img{
+  height: 30rem;
+  width: 25rem;
+}
+
+.about-item-card{
+  width: 220px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*token economics section */
+
+.token-econ-card{
+  padding: 1rem 2rem;
+  box-shadow: 0.1rem 0.1rem 0.7rem rgba(0,0,0, 0.1);
+  text-align: start;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.token-econ-card button{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  padding: 0.5rem 0.9rem ;
+  background: rgba(67, 98, 164, 0.1);
+  backdrop-filter: blur(4px);
+  color: #4362A4;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.token-econ-card button img{
+  height: 1.2rem;
 }
