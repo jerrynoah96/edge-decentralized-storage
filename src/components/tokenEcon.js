@@ -6,7 +6,7 @@ import '../App.css';
 const About =()=> {
 
     return(
-        <section className="about">
+        <section className="about" id="tokenEcons">
             <div className="about-item">
 
             
@@ -15,7 +15,7 @@ const About =()=> {
                         Token Economics
                     </h3>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, veritatis? Saepe libero architecto assumenda nesciunt. Rerum provident qui distinctio hic consectetur! Est natus delectus ipsa minima quam veniam nam praesentium</p>
+                    <p>To obtain the resources required to make Mirax a reality, we are launching a token sale in Q2 2021. The token sale will likely use a SAFT to be converted 1:1 to native Mirax tokens (MRX) after the deployment of the Mirax Blockchain in Q4 2021</p>
                     <button>Buy Token <img src={buyTokenIcon} alt="buy"/> </button>
                 </div>
 

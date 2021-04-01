@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../images/logo.png';
 import launchLogo from '../images/launchIcon.png';
 import headerImg from '../images/headerImg.png';
 import asImg from '../images/AsImg.png';
@@ -9,6 +8,7 @@ import fasterAndCheaper from '../images/Faster-and-cheaper.png';
 import environmentallyFriendly from '../images/Environmentally-friendly.png';
 import globalResearch from '../images/Global-Research.png';
 import headerBg from '../images/header-bg.png';
+import {Link} from 'react-scroll';
 import '../App.css';
 
 const Nav =()=> {
@@ -16,15 +16,14 @@ const Nav =()=> {
     return(
     <header className="header">
         <nav className="navbar">
-            <img src={logo} alt="logo" className="brand-logo"/>
+            <img src="https://cdn.discordapp.com/attachments/780379717043355648/821802912593477652/Group.png" alt="logo" className="brand-logo"/>
             <div className="nav-links">
-                <a className="nav-link" href="#">About Us</a>
-                <a className="nav-link" href="#">Tokeneconomics</a>
-                <a className="nav-link" href="#">Roadmap</a>
-                <a className="nav-link" href="#">Team</a>
-                <a className="nav-link" href="#">Contact Us</a>
-                <a className="nav-link" href="#">Contact Us</a>
-                <a className="nav-link launch-link" href="#">Launch App <img src={launchLogo} alt="launchLogo" className="launch-logo"/> </a>
+                <Link className="nav-link" to="about" smooth={true} duration={1000}>About Us</Link>
+                <Link className="nav-link" to="tokenEcons" smooth={true} duration={1000}>Tokeneconomics</Link>
+                <Link className="nav-link" to="roadmap" smooth={true} duration={1000}>Roadmap</Link>
+                <Link className="nav-link" to="team" smooth={true} duration={1000} >Team</Link>
+                <Link className="nav-link" to="contact" smooth={true} duration={1000}>Contact Us</Link>
+                <Link className="nav-link launch-link" href="#">Launch App <img src={launchLogo} alt="launchLogo" className="launch-logo"/> </Link>
                 
             </div>   
         </nav>
@@ -32,7 +31,7 @@ const Nav =()=> {
         <div className="header-content">
             <div className="header-text">
                 <h2> <span>Access</span> the <br /> decentralized <span>Storage</span></h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, veritatis? Saepe libero architecto assumenda nesciunt. Rerum provident qui distinctio hic consectetur! Est natus delectus ipsa minima quam veniam nam praesentium </p>
+                <p> Mirax is a network with full-featured services from payments to storage of files and applications, which is based on the paradigm of a distributed system without dependence on a permanent connection to control servers</p>
                 <div className="header-btns">
                     <button className="access-storage-btn"> Access Storage <img src={asImg} alt="icon"/></button>
                     <button className="white-paper-btn"> White Paper <img src={wpImg} alt="icon"/></button>
@@ -49,11 +48,11 @@ const Nav =()=> {
                 <img src={ownedByEveryone} alt="logo" className="card-img"/>
 
                 <h3>
-                    Owned by Everyone
+                    File Storage
                 </h3>
 
                 <p>
-                    Anyone can contribute to the Edge and benefit from its use
+                Mirax Storage is a distributed file-storage technology, accessible through the Mirax P2P Network and available for storing arbitrary files,
                 </p>
 
             </div>
@@ -62,11 +61,11 @@ const Nav =()=> {
                 <img src={fasterAndCheaper} alt="logo" className="card-img"/>
 
                 <h3>
-                    Faster and Cheaper
+                    Mirax Access
                 </h3>
 
                 <p>
-                Edge offers improved efficiency and performance, saving up to 90% compared with traditional cloud services.
+                Mirax Access provides a platform for third-party services of any kind that enables smartphone-like friendly interfaces for decentralized apps and smart contracts.
                 </p>
 
             </div>
@@ -76,11 +75,11 @@ const Nav =()=> {
                 <img src={environmentallyFriendly} alt="logo" className="card-img"/>
 
                 <h3>
-                    Environmentally Friendly
+                    Mirax Virtual Machine
                 </h3>
 
                 <p>
-                Edge is built using spare capacity from devices already in the home & office, reducing the carbon footprint of the net.
+                The Mirax Virtual Machine is a dedicated smart contract execution engine built on WASM.
                 </p>
 
             </div>
@@ -89,11 +88,11 @@ const Nav =()=> {
                 <img src={globalResearch} alt="logo" className="card-img"/>
 
                 <h3>
-                    Truly Global Research
+                    DNS
                 </h3>
 
                 <p>
-                Network coverage in 60 countries and counting.
+                Mirax DNS is a service for assigning human-readable names to accounts, smart contracts, services, and network nodes.
                 </p>
 
             </div>
