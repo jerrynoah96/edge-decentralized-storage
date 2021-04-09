@@ -18,7 +18,7 @@ const About =()=> {
 
                 </div>
 
-                <img src={aboutTech} alt="aboutTechPic" className="about-item-img"/>
+                <img src={aboutTech} alt="aboutTechPic" className="about-item-img about-left-img"/>
 
             </div>
 
