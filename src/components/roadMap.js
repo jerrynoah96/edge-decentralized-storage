@@ -73,7 +73,7 @@ const RoadMap=()=> {
                
             </Carousel>
 
-            <button className="roadmap-btn">learn more <img src={learnMoreIcon} alt="buy"/> </button>
+            <button className="roadmap-btn">Learn more <img src={learnMoreIcon} alt="buy"/> </button>
 
             <img src={roadmapBg} className="roadmap-bg" alt="backgroundPic"/>
             

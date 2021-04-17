@@ -1,5 +1,6 @@
 import React from 'react';
 import mailIcon from '../images/mail-icon.png';
+import logo from '../images/logo.png';
 
 
 
@@ -8,7 +9,7 @@ const Footer=()=> {
         <footer className="footer">
             
             <div className="row contact-white-share">
-                <img src="https://cdn.discordapp.com/attachments/780379717043355648/821802912593477652/Group.png" alt="logo" className="brand-logo"/>
+                <img src={logo} alt="logo" className="brand-logo"/>
                 
 
                 <span>

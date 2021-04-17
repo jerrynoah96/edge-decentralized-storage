@@ -19,7 +19,7 @@ const ContactUs = ()=> {
                     <span>Don't miss out, stay updated</span>
                     <div className="email-input">
                         <input type="text" placeholder="enter your email here"/>
-                        <button>access storage
+                        <button>Submit
                         <img src={asImg} alt="icon"/>
                         </button>
 
@@ -29,12 +29,25 @@ const ContactUs = ()=> {
 
             </div>
             <div className="contact-social-media">
+                <div>
                     <img src={facebook} alt="facebook"/>
-                    <img src={twitter} alt="twitter" />
-                    <img src={instagram} alt="instagram" />
-                    <img src={telegram} alt = "telegram" />
-                    <img src={medium} alt = "medium"/>
+                </div>
 
+                 <div>
+                    <img src={twitter} alt="twitter" />
+                </div>
+
+                <div>
+                    <img src={instagram} alt="instagram" />
+                </div>
+
+                <div>
+                    <img src={telegram} alt = "telegram" />
+                </div>
+
+                 <div>
+                    <img src={medium} alt = "medium"/>
+                </div>
                 </div>
 
                 <div className="line">

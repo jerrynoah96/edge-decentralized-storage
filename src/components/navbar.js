@@ -8,6 +8,7 @@ import fasterAndCheaper from '../images/Faster-and-cheaper.png';
 import environmentallyFriendly from '../images/Environmentally-friendly.png';
 import globalResearch from '../images/Global-Research.png';
 import headerBg from '../images/header-bg.png';
+import logo from '../images/logo.png';
 import {Link} from 'react-scroll';
 import '../App.css';
 
@@ -16,7 +17,10 @@ const Nav =()=> {
     return(
     <header className="header">
         <nav className="navbar">
-            <img src="https://cdn.discordapp.com/attachments/780379717043355648/821802912593477652/Group.png" alt="logo" className="brand-logo"/>
+        <div className="brand">
+        <img src={logo} alt="logo" className="brand-logo"/>Mirax
+        </div>
+            
             <div className="nav-links">
                 <Link className="nav-link" to="about" smooth={true} duration={1000}>About Us</Link>
                 <Link className="nav-link" to="tokenEcons" smooth={true} duration={1000}>Tokeneconomics</Link>
