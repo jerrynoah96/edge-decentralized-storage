@@ -8,7 +8,7 @@ const About =()=> {
 
     return(
         <section className="about" id="about">
-            <div className="about-item">
+            <div className="about-item about-item-first">
                 <div className="about-item-text">
                     <h3>
                         About the Technology
@@ -24,7 +24,7 @@ const About =()=> {
 
             <h2> Future of decentralized Storage</h2>
 
-        <div className="about-item">
+        <div className="about-item about-item-second">
 
             <img src={speedPic} alt="aboutTechPic" className="about-item-img about-big-img"/>
                 <div className="about-item-text about-item-speed speed-card">

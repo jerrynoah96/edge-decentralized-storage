@@ -10,17 +10,27 @@ body{
   overflow-x: hidden;
 }
 .navbar{
-  height: 7vh;
-  width: 90vw;
+  height: auto;
+  width: 100vw;
+  padding: 0 5%;
   display: flex;
   justify-content: center;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
-  left: 50%;
-  top: 5%;
-  transform: translate(-50%, -50%);
-  
+  z-index: 999; 
+  background-image: linear-gradient(71.85deg, #14213D -2.27%, #20195E 32.46%, #3C06A9 73.55%, #36E1E1 114.25%); 
+}
+.navbar a{
+  color: white !important;
+}
+.navbar-toggler{
+  background-color: rgba(255, 255, 255) !important;
+  color: rgba(255, 255, 255);
+
+}
+.navbar-toggler:focus{
+  text-decoration: none;
+  box-shadow: none !important;
 }
 
 .navbar img{
@@ -33,13 +43,15 @@ body{
 }
 
 .nav-links{
-  width: 75%;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
   margin-right: 1rem;
   font-family: 'Raleway', sans-serif;
+  margin-left: auto !important;
+  
   
   
 }
@@ -181,6 +193,48 @@ header button img{
   transform: translate(-50%, -50%);
 }
 
+/* Media Query for header and navbar */
+@media only screen and (max-width: 1000px) and (min-width: 100px)  {
+  .header-px{
+    display: none;
+  }
+  .header-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+  }
+  
+}
+
+@media only screen and (max-width: 600px){
+  .header-text h2{
+    font-size: 1.7rem;
+  }
+  .header-text p {
+    font-size: 1rem;
+  }
+  .header-btns{
+    width: 60vw;
+  }
+  header button {
+    padding: 0.3rem 0.9rem;
+    font-size: 0.7rem;
+  }
+  .navbar{
+    height: auto;
+  }
+  .nav-links{
+    height: 40vh !important;
+    width: 100vw !important;
+  }
+  .launch-link{
+    padding: 1rem 2.2rem !important;
+  }
+
+}
+
 /* SYLINGS FOR HEADER CARDS */
 
 
@@ -227,6 +281,26 @@ header button img{
   justify-content: space-between;
   align-items: center;
   z-index: 9;
+}
+
+/* media query for header-cards */
+@media only screen and (max-width: 600px){
+  
+  .header-cards{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 80%;
+    
+    
+  }
+  .header-card{
+    margin-top: 2rem;
+  }
+  .header-card p{
+    font-size: 0.75rem;
+  }
+
 }
 
 
@@ -303,6 +377,53 @@ header button img{
   position: absolute;
   left: -10%;
 }
+/*media query for about sections */
+@media only screen and (max-width: 700px) and (min-width: 100px)  {
+  .about{
+    margin-top: 220% !important;
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column !important;
+    
+  }
+  .about-left-img{
+    display: block;
+    margin-top: 200%;
+    margin-bottom: -220% !important;
+  }
+  .about-item-first .about-item-text{
+    width: 60vw !important;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -10%);
+    
+  
+    
+  }
+  .about-item-second .about-item-text{
+    margin-top: 70% !important;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -10%);
+  }
+  .speed-card{
+    width: 60vw;
+  }
+  .about-big-img{
+    display: none;
+  }
+  .about h2{
+    position: absolute;
+    display: none;
+  }
+
+  
+}
 
 /*token economics section */
 
@@ -336,6 +457,35 @@ header button img{
   width: 44rem !important;
 }
 
+/* token econs */
+@media only screen and (max-width: 700px) and (min-width: 100px)  {
+ 
+  
+  .token-econ-img{
+    display: block;
+  }
+  #tokenEcons .about-item{
+    display: flex  !important;
+    flex-direction: column !important;
+  }
+  .token-econ-img{
+    width: 80vw !important;
+    height: 80%;
+  }
+  .token-econ-card{
+    width: 60vw;
+
+  }
+  .token-econ-card p{
+    font-size: 0.75rem;
+  }
+  .token-econ-card button{
+    font-size: 0.8rem;
+
+  }
+  
+}
+
 
 /* Team styling */
 .team{
@@ -344,6 +494,7 @@ header button img{
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  
   
 }
 .team-header{
@@ -400,6 +551,20 @@ header button img{
   align-items: center;
   justify-content: space-between;
   margin-top: 2rem;
+}
+/*media query for team section */
+@media only screen and (max-width: 700px) and (min-width: 100px)  {
+ 
+  
+  .team-row{
+    display: flex;
+    flex-direction: column;
+    height: auto !important;
+    justify-content: space-between6uo6yg6yuy8l  xehm;
+    
+  }
+ 
+  
 }
 /*contact us */
 .contact-us{
