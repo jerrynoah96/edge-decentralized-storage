@@ -2,7 +2,7 @@ import React from 'react';
 import launchLogo from '../images/launchIcon.png';
 import logo from '../images/logo.png';
 import {Link} from 'react-scroll';
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Navbar, Nav} from 'react-bootstrap';
 import '../App.css';
 
 
