@@ -21,7 +21,7 @@ const About =()=> {
                 <img src={aboutTech} alt="aboutTechPic" className="about-item-img about-left-img"/>
 
             </div>
-
+            
             <h2> Future of decentralized Storage</h2>
 
         <div className="about-item about-item-second">

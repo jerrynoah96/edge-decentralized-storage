@@ -7,7 +7,7 @@ h1, h2, h3{
 }
 
 body{
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 .navbar{
   height: auto;
@@ -216,7 +216,7 @@ header button img{
     font-size: 1rem;
   }
   .header-btns{
-    width: 60vw;
+    width: 80vw;
   }
   header button {
     padding: 0.3rem 0.9rem;
@@ -231,6 +231,10 @@ header button img{
   }
   .launch-link{
     padding: 1rem 2.2rem !important;
+  }
+  body{
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
   }
 
 }
@@ -260,23 +264,23 @@ header button img{
 
 }
 .header-card p{
-  line-height: 1.6rem;
+  line-height: 1.45rem;
   font-size: 0.9rem;
   font-weight: 700;
 }
 
 .header-card h3{
-  
+  font-size: 1.5rem;
   font-weight: 600;
   font-family: 'Roboto Slab', serif;
 }
 
 .header-cards{
-  position: absolute;
-  bottom: -5%;
-  left: 50%;
-  transform: translate(-50%);
-  width: 85vw;
+  width: 100vw;
+  
+  padding: 0 5%;
+  margin-top: -10%;
+  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -290,15 +294,20 @@ header button img{
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 80%;
-    
-    
+    margin-top: -20%;
+
   }
-  .header-card{
+  .header-card:nth-child(2),
+  .header-card:nth-child(3),
+  .header-card:nth-child(4)
+  {
     margin-top: 2rem;
   }
   .header-card p{
     font-size: 0.75rem;
+  }
+  .header-card h3{
+    font-size: 1.2rem;
   }
 
 }
@@ -307,11 +316,13 @@ header button img{
 /*ABOUT SECTION STYLING */
 
 .about{
+  height: auto !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 3rem;
+  
   
 }
 .about-item-img{
@@ -379,50 +390,32 @@ header button img{
 }
 /*media query for about sections */
 @media only screen and (max-width: 700px) and (min-width: 100px)  {
-  .about{
-    margin-top: 220% !important;
-    position: relative;
-    width: 100%;
-    height: auto;
-    display: flex;
+  #about{
+    display: flex !important;
     flex-direction: column !important;
-    
   }
-  .about-left-img{
-    display: block;
-    margin-top: 200%;
-    margin-bottom: -220% !important;
+  .about-item{
+    display: flex;
+    flex-direction: column;
   }
-  .about-item-first .about-item-text{
-    width: 60vw !important;
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 10%;
-    transform: translate(-50%, -10%);
-    
-  
-    
+  .about-item-text{
+    width: 80vw !important;
   }
-  .about-item-second .about-item-text{
-    margin-top: 70% !important;
-    position: absolute;
-    left: 50%;
-    top: 10%;
-    transform: translate(-50%, -10%);
-  }
-  .speed-card{
-    width: 60vw;
+  .about-left-img,
+  .about-big-img{
+    width: 70vw !important;
+    height: 50vh !important;
   }
   .about-big-img{
-    display: none;
+    margin-top: -5%;
   }
-  .about h2{
-    position: absolute;
-    display: none;
+  .speed-card{
+    margin-top: 10%;
   }
-
-  
+  #about h2{
+    margin-top: 10%;
+    text-align: center;
+  }
 }
 
 /*token economics section */
@@ -456,13 +449,19 @@ header button img{
 .token-econ-img{
   width: 44rem !important;
 }
+#tokenEcons{
+  height: auto !important;
+}
 
-/* token econs */
+/* media query for token econs */
 @media only screen and (max-width: 700px) and (min-width: 100px)  {
  
   
   .token-econ-img{
     display: block;
+  }
+  #tokenEcons{
+    height: auto !important;
   }
   #tokenEcons .about-item{
     display: flex  !important;
@@ -560,8 +559,11 @@ header button img{
     display: flex;
     flex-direction: column;
     height: auto !important;
-    justify-content: space-between6uo6yg6yuy8l  xehm;
+    justify-content: space-between;
     
+  }
+  .team-member{
+    margin-top: 2.5rem;
   }
  
   
@@ -681,7 +683,7 @@ header button img{
 }
 .email-input button{
   position: absolute;
-  top:50%;
+  top:45%;
   left: 100%;
   transform: translate(-135%, -50%);
   height: 100%;
@@ -717,12 +719,76 @@ button:focus{
   outline: none;
 }
 
+/*media query for contact us */
+@media only screen and (max-width: 700px) and (min-width: 100px)  {
+ 
+  .contactUs-bg{
+    height: 40vh;
+    position: relative;
+    clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
+  
+  }
+  .contact-social-media{
+    width: 80vw;
+  }
+  .contact-us h3{
+    font-size: 1.5rem;
+  }
+
+  .contact-social-media div{
+    height: 60px;
+    width: 60px;
+     border-left: 0.07px solid rgba(0,0,0, 0.3);
+     position: relative;
+  }
+  .contact-social-media img{
+    height: 25px;
+    width: 25px;
+    
+  }
+  .subscribe span{
+    font-size: 1.2rem ;
+  }
+  .subscribe{
+    display: flex;
+    flex-direction: column;
+  }
+  .subscribe .email-input{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .email-input{
+    width: 65vw;
+    padding-left: 0.3rem;
+    
+  }
+
+
+  .email-input input::placeholder{
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.7);
+    padding-left: 0.7rem;
+    
+  }
+  .email-input button{
+    height: 90%;
+    top: 45%;
+  }
+  .email-input button img{
+    margin-left: 0.3rem !important;
+    height: 20px;
+    width: 20px;
+  }
+
+}
+
 /* Footer */
 
 .footer{
   background: linear-gradient(71.85deg, #14213D -2.27%, #20195E 32.46%, #3C06A9 73.55%, #36E1E1 114.25%), #FFFFFF;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 1rem;
+  color: rgba(255, 255, 255);
+  font-size: 0.9rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -762,7 +828,7 @@ button:focus{
   margin-bottom: 1rem;
 }
 .footer a{
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255);  
   text-decoration: none;
 
 }
@@ -776,6 +842,44 @@ button:focus{
   font-size: 0.8rem;
   line-height: 1.5rem;
 
+}
+
+/*media query for team section */
+@media only screen and (max-width: 700px) and (min-width: 100px)  {
+.footer{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: yellow;
+  box-sizing: border-box !important;
+}
+
+  .row{
+   
+   width: 100% !important;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  
+ }
+ .footer span{
+   text-align: center;
+ }
+ .footer-email{
+   
+   display: flex;
+   justify-content: center;
+   margin-bottom: 1.5rem;
+ }
+ .footer .brand-logo{
+   width: 50px;
+   margin-bottom: 1.5rem;
+ }
+ 
+  
 }
 
 /* Road Map */
@@ -792,10 +896,10 @@ button:focus{
 
 .carousel{
   width: 70vw;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
   display: flex;
   justify-content: space-between;
   
@@ -925,7 +1029,7 @@ button:focus{
 }
 .circles{
   position: absolute;
-  top: 10;
+  top: 50;
   width: 65vw;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -939,4 +1043,25 @@ button:focus{
   width: 15px;
   border-radius: 50%;
   background-color: white;
+}
+
+/*media query for roadmap section */
+@media only screen and (max-width: 700px) and (min-width: 100px)  {
+ 
+ .progress{
+  height: 1px !important; 
+ }
+ .roadmap-btn{
+  font-size: 0.7rem;
+  padding: 0.6rem 1.5rem ;
+  margin-top: 1.2rem;
+ }
+ .roadmap-btn img{
+    height: 20px;
+    width: 20px;   
+ }
+ .roadmap-item h3{
+   font-size: 1.2rem;
+ }
+  
 }

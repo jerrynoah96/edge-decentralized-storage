@@ -12,7 +12,7 @@ const Footer=()=> {
                 <img src={logo} alt="logo" className="brand-logo"/>
                 
 
-                <span>
+                <span className="footer-email">
                 <img src={mailIcon} alt="mail" className="footer-icon"/>
                 contact@whiteshare.com
                 </span>

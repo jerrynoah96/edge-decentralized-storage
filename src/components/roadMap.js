@@ -9,7 +9,9 @@ import ProgressBar from './progressBar';
 const RoadMap=()=> {
 
     const breakPoints=[
+        {width: 700, itemsToShow: 1},
         {width: 1000, itemsToShow: 3}
+        
     ]
     return (
         <div className="roadMap" id="roadmap">

@@ -8,7 +8,7 @@ import ContactUs from './components/contactUs';
 import Footer from './components/footer';
 import RoadMap from './components/roadMap';
 import NavBar from './components/navbar.js';
-
+import HeaderCards from './components/headerCards';
 import Aos from  "aos";
 import "aos/dist/aos.css";
 
@@ -20,7 +20,8 @@ const App=()=> {
     <div className="App">
       <NavBar />
       <Header />
-      <div data-aos="fade-up">
+      <HeaderCards />
+      <div>
         <About />
       </div>
       
