@@ -7,6 +7,7 @@ import Jerry from '../images/jerry.png';
 import Alex from '../images/alex.png';
 import Yan from '../images/yan.png';
 import mrx from '../images/mrx.png';
+import '../App.css';
 
 
 

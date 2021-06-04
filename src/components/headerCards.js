@@ -3,6 +3,7 @@ import ownedByEveryone from '../images/Owned-by-everyone.png';
 import fasterAndCheaper from '../images/Faster-and-cheaper.png';
 import environmentallyFriendly from '../images/Environmentally-friendly.png';
 import globalResearch from '../images/Global-Research.png';
+import '../App.css';
 
 
 

@@ -6,6 +6,7 @@ import instagram from '../images/insta-o-design.png';
 import telegram from '../images/telegram-o-design.png';
 import medium from '../images/medium-o-design.png';
 import asImg from '../images/AsImg.png';
+import '../App.css';
 
 
 
@@ -14,20 +15,9 @@ const ContactUs = ()=> {
         <section className="contact-us" id="contact">
             <div className="contactUs-bg">
                 <h3> Contact Us</h3>
-                <div className="subscribe">
+               
 
-                    <span>Don't miss out, stay updated</span>
-                    <div className="email-input">
-                        <input type="text" placeholder="enter your email here"/>
-                        <button>Submit
-                        <img src={asImg} alt="icon"/>
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
+            
             <div className="contact-social-media">
                 <div>
                     <img src={facebook} alt="facebook"/>
@@ -48,11 +38,24 @@ const ContactUs = ()=> {
                  <div>
                     <img src={medium} alt = "medium"/>
                 </div>
-                </div>
+            </div>
+            <div className="subscribe">
+
+            <span>Don't miss out, stay updated</span>
+            <div className="email-input">
+                <input type="text" placeholder="enter your email here"/>
+                <button>Submit
+                <img src={asImg} alt="icon"/>
+                </button>
+
+            </div>
+
+            </div>
 
                 <div className="line">
 
                 </div>
+        </div>
 
         </section>
 

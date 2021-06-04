@@ -86,7 +86,7 @@ padding: 1rem 2rem;
 .header{
   position: relative;
   padding-top: 1rem;
-  height: 120vh;
+  height: 110vh;
   width: 100vw;
   color: rgba(255, 255, 255);
  
@@ -245,7 +245,7 @@ header button img{
 
 .header-card{
   height: 260px;
-  width: 220px;
+  width: 240px;
   background-color: rgba(255, 255, 255);
   color: rgba(0,0,0);
   font-size: 0.8rem;
@@ -266,12 +266,12 @@ header button img{
 .header-card p{
   line-height: 1.45rem;
   font-size: 0.9rem;
-  font-weight: 700;
+ font-weight: normal;
 }
 
 .header-card h3{
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 500 !important;
   font-family: 'Roboto Slab', serif;
 }
 
@@ -362,8 +362,8 @@ header button img{
   align-items: center;
 }
 .about-big-img{
-  height: 47rem;
-  width: 45rem;
+  height: 49rem;
+  width: 47rem;
 }
 
 .about-item-card{
@@ -375,7 +375,7 @@ header button img{
   padding: 1.5rem 1.2rem;
   box-shadow: 0.1rem 0.1rem 0.7rem rgba(0,0,0, 0.1);
   text-align: start;
-  width: 17vw;
+  width: 400px;
   position: relative;
   text-align: center;
 }
@@ -386,7 +386,8 @@ header button img{
   height: 80px;
   width: 80px;
   position: absolute;
-  left: -10%;
+  left: -12%;
+  top: 5%;
 }
 /*media query for about sections */
 @media only screen and (max-width: 700px) and (min-width: 100px)  {
@@ -500,8 +501,8 @@ header button img{
   font-size: 1.5rem;
 }
 .team-member{
-  height: 190px;
-  width: 190px;
+  height: 200px;
+  width: 220px;
   background-color: rgba(255, 255, 255);
   color: rgba(0,0,0);
   box-shadow: 0.1rem 0.1rem 0.7rem rgba(0,0,0, 0.1);
@@ -545,11 +546,11 @@ header button img{
 
 .team-row{
   display: flex;
-  width: 60vw;
+  width: 75vw;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 /*media query for team section */
 @media only screen and (max-width: 700px) and (min-width: 100px)  {
@@ -572,8 +573,11 @@ header button img{
 .contact-us{
  /* background: linear-gradient(71.85deg, #14213D -2.27%, #20195E 32.46%, #3C06A9 73.55%, #36E1E1 114.25%), #FFFFFF;
   */color: rgba(255, 255, 255);
+  height: auto !important;
   position: relative;
-  margin-bottom: -3%;
+  margin-bottom: 0% !important;
+  padding-bottom: 0rem !important;
+  
   
   
  
@@ -584,16 +588,17 @@ header button img{
   left: 50%;
   transform: translate(-50%, 0);
   width: 70vw;
-  height: 0.1px;
+  height: 0.1px !important;
   background-color: rgba(255, 255, 255, 0.6);
+  
 }
 
 .contactUs-bg{
-  height: 40vh;
+  height: 60vh;
   background: linear-gradient(71.85deg, #14213D -2.27%, #20195E 32.46%, #3C06A9 73.55%, #36E1E1 114.25%), #FFFFFF;
   padding-top: 7rem;
   padding-bottom: 4rem;
-  position: relative;
+  position: relative !important;
   clip-path: polygon(0 70%, 100% 0, 100% 100%, 0% 100%);
 
 }
@@ -649,6 +654,7 @@ header button img{
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Roboto Slab', serif;
+  
 }
 .subscribe span{
   font-family: 'Roboto Slab', serif;
@@ -721,7 +727,10 @@ button:focus{
 
 /*media query for contact us */
 @media only screen and (max-width: 700px) and (min-width: 100px)  {
- 
+ .contact-us{
+  padding-bottom: 0.1rem !important;
+  
+ }
   .contactUs-bg{
     height: 40vh;
     position: relative;
@@ -733,6 +742,11 @@ button:focus{
   }
   .contact-us h3{
     font-size: 1.5rem;
+  }
+
+  .contact-social-media{
+    
+    right: 12% !important;
   }
 
   .contact-social-media div{
@@ -752,6 +766,7 @@ button:focus{
   .subscribe{
     display: flex;
     flex-direction: column;
+    
   }
   .subscribe .email-input{
     margin-top: 2rem;
@@ -783,104 +798,7 @@ button:focus{
 
 }
 
-/* Footer */
 
-.footer{
-  background: linear-gradient(71.85deg, #14213D -2.27%, #20195E 32.46%, #3C06A9 73.55%, #36E1E1 114.25%), #FFFFFF;
-  color: rgba(255, 255, 255);
-  font-size: 0.9rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5%;
-  font-family: 'Raleway', sans-serif;
-  
-}
-
-.footer ul{
-  list-style-type: none;
-}
-.footer .row{
-  width: auto;
-  text-align: center;
-  text-align: start;
-  display: flex;
-  justify-content: space-between;
-}
-
-
-.footer .brand-logo{
-  height: 40px;
-  width: 40px;
-}
-.contact-white-share{
-  font-size: 0.8rem;
-}
-
-.contact-white-share span{
-  display: flex;
-}
-.contact-white-share p{
-  line-height: 1.2rem;
-}
-
-.last-row span{
-  margin-bottom: 1rem;
-}
-.footer a{
-  color: rgba(255, 255, 255);  
-  text-decoration: none;
-
-}
-
-.row span{
-  font-size: 0.8rem;
-  margin-left: 1rem;
-  font-size: 1.2rem;
-}
-.row{
-  font-size: 0.8rem;
-  line-height: 1.5rem;
-
-}
-
-/*media query for team section */
-@media only screen and (max-width: 700px) and (min-width: 100px)  {
-.footer{
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center !important;
-  justify-content: center !important;
-  background-color: yellow;
-  box-sizing: border-box !important;
-}
-
-  .row{
-   
-   width: 100% !important;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-  
- }
- .footer span{
-   text-align: center;
- }
- .footer-email{
-   
-   display: flex;
-   justify-content: center;
-   margin-bottom: 1.5rem;
- }
- .footer .brand-logo{
-   width: 50px;
-   margin-bottom: 1.5rem;
- }
- 
-  
-}
 
 /* Road Map */
 .roadMap{
@@ -1002,6 +920,7 @@ button:focus{
 	margin: 120px 0;
 	height: 3px;
 	width: 100vw;
+  z-index: 99;
 }
 
 .progress-done {
@@ -1020,28 +939,32 @@ button:focus{
   justify-content: space-between;
   
 }
+
 .progress-bar{
   position: absolute;
   top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 9;
   
 }
 .circles{
-  position: absolute;
-  top: 50;
+  position: absolute !important;
+  top: 50% !important;
   width: 65vw;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) !important;
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 9999999999 !important;
 }
 .yellow-circle{
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
+  
+  height: 20px !important;
+  width: 20px !important;
+  border-radius: 50% !important;
   background-color: white;
 }
 
@@ -1063,5 +986,104 @@ button:focus{
  .roadmap-item h3{
    font-size: 1.2rem;
  }
+  
+}
+
+
+/* Footer */
+
+.footer{
+  background: linear-gradient(71.85deg, #14213D -2.27%, #20195E 32.46%, #3C06A9 73.55%, #36E1E1 114.25%), #FFFFFF;
+  color: rgba(255, 255, 255);
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3%;
+  font-family: 'Raleway', sans-serif;
+  
+}
+
+
+
+
+
+.footer .brand-logo{
+  height: 70px;
+  width: 50px;
+}
+.contact-white-share{
+  font-size: 0.8rem;
+}
+
+.contact-white-share span{
+  display: flex;
+}
+.contact-white-share span{
+  line-height: 1.2rem;
+}
+
+
+.footer a{
+  color: rgba(255, 255, 255);  
+  text-decoration: none;
+
+}
+.footer a:hover{
+  color: rgba(255, 255, 255);
+}
+
+.row span{
+  
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  
+}
+.footer .row{
+  width: auto !important;
+ display: flex !important;
+ justify-content: space-between !important;
+ align-items: center !important;
+  
+}
+.row img{
+  display: inline !important;
+}
+
+/*media query for team section */
+@media only screen and (max-width: 700px) and (min-width: 100px)  {
+.footer{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: yellow;
+  box-sizing: border-box !important;
+}
+
+  .row{
+   
+   width: 100% !important;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  
+ }
+
+ .footer span{
+   text-align: center;
+ }
+ .footer-email{
+   
+   display: flex;
+   justify-content: center;
+   margin-bottom: 1.5rem;
+ }
+ .footer .brand-logo{
+   width: 50px  !important;
+   margin-bottom: 1.5rem;
+ }
+ 
   
 }

@@ -3,6 +3,7 @@ import Carousel from 'react-elastic-carousel';
 import roadmapBg from '../images/roadMap.jpg';
 import learnMoreIcon from '../images/learn-more.png';
 import ProgressBar from './progressBar';
+import '../App.css';
 
 
 

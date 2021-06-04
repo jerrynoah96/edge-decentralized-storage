@@ -1,5 +1,5 @@
 import React from 'react';
-import headerImg from '../images/headerImg.png';
+import headerImg from '../images/headerImg.svg';
 import asImg from '../images/AsImg.png';
 import wpImg from '../images/WpImg.png';
 import headerBg from '../images/header-bg.png';
