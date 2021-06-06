@@ -297,6 +297,12 @@ header button img{
     margin-top: -20%;
 
   }
+  .header-card img{
+    height: 60px !important;
+    width: 60px !important;
+    margin-top: -1.2rem;
+  
+  }
   .header-card{
     height: 245px !important;
     width: 235px !important;
