@@ -297,6 +297,10 @@ header button img{
     margin-top: -20%;
 
   }
+  .header-card{
+    height: 245px !important;
+    width: 235px !important;
+  }
   .header-card:nth-child(2),
   .header-card:nth-child(3),
   .header-card:nth-child(4)
@@ -307,7 +311,7 @@ header button img{
     font-size: 0.75rem;
   }
   .header-card h3{
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
 
 }
@@ -400,11 +404,19 @@ header button img{
     flex-direction: column;
   }
   .about-item-text{
-    width: 80vw !important;
+    width: 70vw !important;
+    
+  }
+  .speed-logo{
+    top: 2%;
+  }
+  .speed-card p{
+    font-size: 0.75rem;
+    margin-top: 1.5rem;
   }
   .about-left-img,
   .about-big-img{
-    width: 70vw !important;
+    width: 60vw !important;
     height: 50vh !important;
   }
   .about-big-img{
@@ -416,6 +428,14 @@ header button img{
   #about h2{
     margin-top: 10%;
     text-align: center;
+    font-size: 1.3rem;
+
+  }
+  .about-item-text h3{
+    font-size: 0.9rem !important;
+  }
+  .about-item-text p{
+    font-size: 0.75rem;
   }
 }
 
