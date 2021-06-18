@@ -700,7 +700,7 @@ header button img{
   width: 100%;
   height: 100%;
   background-color: inherit;
-  border: 0.08px solid rgba(255, 255, 255);
+  border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 20px;
   color: rgba(255, 255, 255);
   padding: none;
@@ -803,6 +803,7 @@ button:focus{
     width: 65vw;
     padding-left: 0.3rem;
     
+    
   }
 
 
@@ -812,6 +813,7 @@ button:focus{
     padding-left: 0.7rem;
     
   }
+  
   .email-input button{
     height: 90%;
     top: 45%;
@@ -838,16 +840,7 @@ button:focus{
   font-family: 'Roboto Slab', serif;
 }
 
-.carousel{
-  width: 70vw;
-  position: absolute !important;
-  top: 50% !important;
-  left: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  display: flex;
-  justify-content: space-between;
-  
-}
+
 
 .roadMap div p{
   line-height: 1.5rem;
@@ -930,6 +923,40 @@ button:focus{
   z-index: 1111111;
   
 }
+.carousel{
+  width: 90vw;
+  position: absolute !important;
+  top: 40% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.carousel .left-arrow{
+  background-color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  left: 0%;
+  height: 300px !important;
+  width: 40px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .right-arrow{
+  background-color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  right: 0%;
+  height: 300px !important;
+  padding: 0 10px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
 
 
 
@@ -942,11 +969,13 @@ button:focus{
 .progress {
 	background-color: #d8d8d8;
 	border-radius: 20px;
-	position: relative;
 	margin: 120px 0;
-	height: 3px;
+	height: 2px !important;
 	width: 100vw;
   z-index: 99;
+  position: relative;
+  display: none !important;
+ 
 }
 
 .progress-done {
@@ -957,7 +986,7 @@ button:focus{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100%;
+	height: 5px !important;
 	width: 0;
 	opacity: 0;
 	transition: 1s ease 0.3s;
@@ -968,7 +997,7 @@ button:focus{
 
 .progress-bar{
   position: absolute;
-  top: 10%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 9;
@@ -976,8 +1005,8 @@ button:focus{
 }
 .circles{
   position: absolute !important;
-  top: 50% !important;
-  width: 65vw;
+  top: 0% !important;
+  width: 60vw;
   left: 50%;
   transform: translate(-50%, -50%) !important;
   height: 100%;
@@ -987,32 +1016,16 @@ button:focus{
   z-index: 9999999999 !important;
 }
 .yellow-circle{
-  
-  height: 20px !important;
-  width: 20px !important;
+  position: absolute !important;
+  top: 0 !important;
+  height: 15px !important;
+  width: 15px !important;
   border-radius: 50% !important;
   background-color: white;
 }
+.yellow-circle1{
+    background: linear-gradient(to left, #F2709C, #FF9472) !important;
 
-/*media query for roadmap section */
-@media only screen and (max-width: 700px) and (min-width: 100px)  {
- 
- .progress{
-  height: 1px !important; 
- }
- .roadmap-btn{
-  font-size: 0.7rem;
-  padding: 0.6rem 1.5rem ;
-  margin-top: 1.2rem;
- }
- .roadmap-btn img{
-    height: 20px;
-    width: 20px;   
- }
- .roadmap-item h3{
-   font-size: 1.2rem;
- }
-  
 }
 
 
@@ -1030,23 +1043,12 @@ button:focus{
   
 }
 
-
-
-
-
 .footer .brand-logo{
   height: 70px;
   width: 50px;
 }
-.contact-white-share{
-  font-size: 0.8rem;
-}
-
-.contact-white-share span{
-  display: flex;
-}
-.contact-white-share span{
-  line-height: 1.2rem;
+.contact-white-share .brand-logo{
+  margin-right: 2rem;
 }
 
 
@@ -1055,27 +1057,28 @@ button:focus{
   text-decoration: none;
 
 }
+.footer-link{
+  color: rgba(255, 255, 255);
+  font-size: 1.2rem;
+}
+
+.contact-white-share span{
+  line-height: 1.2rem;
+  font-size: 1.4rem;
+}
+.footer .row {
+  color: rgba(255, 255, 255);  
+  text-decoration: none;
+  
+  width: auto !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
 .footer a:hover{
   color: rgba(255, 255, 255);
 }
-
-.row span{
-  
-  margin-left: 1rem;
-  font-size: 1.2rem;
-  
-}
-.footer .row{
-  width: auto !important;
- display: flex !important;
- justify-content: space-between !important;
- align-items: center !important;
-  
-}
-.row img{
-  display: inline !important;
-}
-
 /*media query for team section */
 @media only screen and (max-width: 700px) and (min-width: 100px)  {
 .footer{
@@ -1086,19 +1089,33 @@ button:focus{
   justify-content: center !important;
   background-color: yellow;
   box-sizing: border-box !important;
+  margin-top: -0.5rem;
 }
 
+.contact-white-share{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
   .row{
    
    width: 100% !important;
    display: flex;
+   flex-direction: column;
   justify-content: center;
   align-items: center;
+  justify-content: space-between !important;
+  height: 4rem;
+  
   
  }
 
  .footer span{
    text-align: center;
+ }
+ .row:nth-child(2){
+   color: greeen;
  }
  .footer-email{
    
@@ -1111,5 +1128,11 @@ button:focus{
    margin-bottom: 1.5rem;
  }
  
+ 
   
 }
+
+
+
+
+

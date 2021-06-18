@@ -9,10 +9,9 @@ const Footer=()=> {
     return (
         <footer className="footer">
             
-            <div className="row contact-white-share">
-                <div>
+            <div className="contact-white-share">
                 <img src={logo} alt="logo" className="brand-logo"/>
-                </div>
+        
                
                 
 
@@ -26,8 +25,8 @@ const Footer=()=> {
 
 
             <div className="row">
-                <span> <a href="https://www.google.com/"> Privacy Policy </a> </span>
-                <span> <a href="https://www.google.com/"> Terms and condition</a> </span>
+                <a href="https://www.google.com/" className="footer-link"> Privacy Policy </a> 
+                <a href="https://www.google.com/" className="footer-link .lower-link"> Terms and condition</a> 
             </div>
 
             
